@@ -377,7 +377,7 @@ if (chats.startsWith(`Bot`)){
 			    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount)
 			    
 				/*conn.sendMessage(from, { react: { text: `👋`, key: msg.key }})*/
-conn.sendMessage(from, { caption: teks, image: {url: 'https://7bd86aba206a59981820-a1471e32c826f82a376e3a3b16604284.ssl.cf6.rackcdn.com/2015/08/danau-maninjau.jpg'}, templateButtons: buttonsDefault, footer: '© Jojo - Bot', mentions: [sender]} )
+conn.sendMessage(from, { caption: teks, image: fs.readFileSync('media/PicUSer.jpeg'), templateButtons: buttonsDefault, footer: '© Jojo - Bot', mentions: [sender]} )
 				break
 case prefix+'delete':
   case prefix+'d':
