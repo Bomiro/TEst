@@ -377,7 +377,7 @@ if (chats.startsWith(`Bot`)){
 			    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount)
 			    
 				/*conn.sendMessage(from, { react: { text: `👋`, key: msg.key }})*/
-conn.sendMessage(from, { caption: teks, image: fs.readFileSync('media/PicUSer.jpeg'), templateButtons: buttonsDefault, footer: '© Jojo - Bot', mentions: [sender]} )
+conn.sendMessage(from, { caption: teks, image: fs.readFileSync('media/PIcUSer.jpeg'), templateButtons: buttonsDefault, footer: '© Jojo - Bot', mentions: [sender]} )
 				break
 case prefix+'delete':
   case prefix+'d':
